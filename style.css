@@ -133,3 +133,12 @@ textarea:focus {
     font-size: 16px;
     line-height: 1.6;
 }
+    .name {
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #444;
+        
+    }
+    
