@@ -1,22 +1,135 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .explanation p {
+        font-size: 14px;
+    }
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
 textarea {
-    width: 300px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: none;
     font-size: 16px;
-    padding: 5px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
 }
 
-button {
-    margin-right: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
+textarea:focus {
+    border-color: #2575fc;
+    outline: none;
 }
 
-a {
-    color: blue;
-    text-decoration: underline;
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #6a11cb;
+}
+
+.link-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.link-group a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link-group a:hover {
+    color: #6a11cb;
+}
+
+.explanation p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
 }
